@@ -74,6 +74,8 @@ footer {
 
 .subscribe-form {
     margin: 10px 0 10px 10px;
+    background-color: #f8f9fa;
+    padding: 3rem 10px;
 }
 
 .subscribe-form form fieldset {
@@ -95,6 +97,7 @@ input[type=submit] {
     border-radius: 50px;
     background-color: #f79918;
     color: #fff;
+    border: none;
 }
 
 .footer-social-icons {
@@ -110,4 +113,45 @@ input[type=submit] {
     color: #888;
 }
 
-    
+ 
+/* for tablet */
+@media screen and (min-width: 750px) {
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header input {
+    order: -1;
+    flex-shrink: 1.4;
+}
+
+header .socialIcons {
+    justify-self: end;
+    flex-shrink: 1.5;
+}
+
+header .logo {
+    justify-self: center;
+}
+
+.heading {
+    margin-top: 50px
+}
+
+.icons {
+    margin: 10px;
+}
+
+.form-input {
+     display: flex;
+ }   
+
+ .form-input input[type=submit] {
+     flex-shrink: 2;
+     margin-left: 10px;
+ }
+
+}
